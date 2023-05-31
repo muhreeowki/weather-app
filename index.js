@@ -4,7 +4,8 @@ const weatherBox = document.querySelector(".weather-box");
 const weatherDetails = document.querySelector(".weather-details");
 const error404 = document.querySelector(".not-found");
 
-searchBtn.onclick = () => {
+
+const getWeather = () => {
   const apiKey = "c91e79f9dda03ca11468d601fd16b7bd";
   const city = document.querySelector(".search-box input").value;
 
@@ -74,3 +75,14 @@ searchBtn.onclick = () => {
       container.style.height = "600px";
     });
 };
+
+searchBtn.onclick = () => {
+  getWeather()
+}
+
+// Listent for Enter Key
+window.addEventListener("keydown", (e) => {
+  if(e.key === 'Enter') {
+    getWeather()
+  }
+})
