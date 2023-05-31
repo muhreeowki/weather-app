@@ -4,3 +4,6 @@ This is a simple weather app that uses [Open Weather Api](https://openweathermap
 
 ## Usage
 Click 👉🏾[HERE](https://weather-app-pied-eta.vercel.app/)👈🏾 to see the deployed application.
+
+### Screenshot
+![Weather App](./images/Screenshot.png)
